@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="style.css">
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+	<div id="header">
+		<img id="minecraft-logo" src="minecraft_logo.png" alt="Minecraft Logo" style="height:150px;vertical-align:middle;">
+	</div>
+	<div id="welcome">
+		<span>Welcome to the Minecraft mob exhibit! In this exhibit you can explore the plethora of mobs Minecraft has to offer!</span>
+		<div id="welcome-description">Below is a tree, where you can find the mobs of Minecraft. Click on their names to view and compare their health points and damage in the scatter plot below. The size of the circles representing the mobs scales to their health points, so the bigger the healthier! The stars of the mobs represent how much damage they can deal, and it also scales. The larger the star the deadlier! Hover over a mob's name for a tooltip with more information.</div>
+	</div>
+	<div id="tree-title">Minecraft Mobs Tree</div>
+	<div id="legend-container">
+		<div id="legend">
+			<span class="legend-item"><span class="legend-line legend-line-conditional"></span> Conditional Line: Neutral Connection</span>
+			<span class="legend-item"><span class="legend-line legend-line-hostile"></span> Hostile Line: Hostile Connection</span>
+			<span class="legend-item"><span class="legend-line legend-line-friendly"></span> Friendly Line: Friendly Connection</span>
+			<span class="legend-item"><span class="legend-circle legend-circle-conditional"></span> Conditional Circle: Neutral Mob</span>
+			<span class="legend-item"><span class="legend-circle legend-circle-hostile"></span> Hostile Circle: Hostile Mob</span>
+			<span class="legend-item"><span class="legend-circle legend-circle-friendly"></span> Friendly Circle: Friendly Mob</span>
+			<span class="legend-item"><span class="legend-star"></span> Star: Special Mob</span>
+		</div>
+	</div>
+	<div id="tree"></div>
+	<div id="scatter-title">Compare Mobs</div>
+	<div id="scatter"></div>
+	<div class="tooltip" id="tooltip"></div>
+	<script src="dashboard.js"></script>
+</body>
+</html>
